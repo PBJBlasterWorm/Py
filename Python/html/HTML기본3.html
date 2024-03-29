@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, th, td {
+            border: solid 1px black;
+            border-collapse: collapse;
+            padding: 8px
+        }
+    </style>
+</head>
+<body>
+    <!-- 테이블 삽입하기 -->
+    <h3>KTX 열차 시간표</h3>
+    <table>
+        <tr>
+            <th>출발</th> <th>도착</th> <th>객실</th> <th>요금</th>
+        </tr>
+        <tr>
+            <td>서울(17:25)</td> <td>부산(20:07)</td> <td>특실</td> <td>83,700원</td>
+        </tr>
+        <tr>
+            <td>서울(18:00)</td> <td>부산(20:35)</td> <td>특실</td> <td>83,700원</td>
+        </tr>
+        <tr>
+            <td>서울(18:15)</td> <td>부산(20:50)</td> <td>일반실</td> <td>50,800원</td>
+        </tr>
+        <!-- table 표에 넣고자 하는 내용, tr 하나의 행, th, 테이블 각 열의 제목,
+        td 열 제목 나타내는 첫번째 행의 셀 제외한 각각의 셀 표현  -->
+    </table>
+    <!-- 테이블의 행과 열 합치기 -->
+    <h3>일기예보</h3>
+    <table>
+        <tr>
+            <th rowspan="2">지역</th><th colspan="2">27일(목)</th><th colspan="2">28일(금)</th>
+            <th colspan="2">29일(토)</th>
+        </tr>
+        <tr>
+            <td>오전</td><td>오후</td><td>오전</td><td>오후</td><td>오전</td><td>오후</td>
+        </tr>
+        <tr>
+            <td>서울<br>경기도</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>제주도</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- rowspan 행 합치는데 사용 colspan 열을 합치는데 사용 -->
+    <!-- 라디오 버튼과 체크박스 만들기 -->
+    <form>
+        아 이 디 : <input type="text"><br>
+        비밀번호 : <input type="password">
+        정보공개 : <input type="radio" checked> 공개
+        <input type="radio"> 비공개 <br>
+        취&nbsp;&nbsp;&nbsp;&nbsp;미 : <input type="checkbox"> 탁구
+        <input type="checkbox"> 배드민턴
+        <input type="checkbox" checked> 음악감상
+        <input type="checkbox" checked> 악기연주
+    </form>
+    <!-- 파일 선택창 만들기 -->
+    <form>
+        파일 첨부 : <input type="file">
+    </form>
+    <!-- 선택 박스 만들기 -->
+    <form>
+        이메일 : <input type="text"> @
+        <select>
+            <option>선택</option>
+            <option>naver.com</option>
+            <option>hammail.net</option>
+            <option>gmail.com</option>
+            <option>직접입력</option>
+        </select>
+    </form>
+    <!-- select 선택 박스 생성 option 선택 박스에 들어갈 항목 -->
+</body>
+</html>
